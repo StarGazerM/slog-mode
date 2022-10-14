@@ -1,0 +1,25 @@
+{
+  "name": "slog-mode",
+  "displayName": "slog-mode",
+  "description": "Another datalog dialect",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "slog",
+      "aliases": ["slog", "slog"],
+      "extensions": [".slog"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "slog",
+      "scopeName": "source.slog",
+      "path": "./syntaxes/slog.tmLanguage"
+    }]
+  }
+}
